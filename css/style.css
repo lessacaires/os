@@ -1,0 +1,125 @@
+﻿*{ margin: 0; padding:0; }
+body{ background: #EDEDED; font-family: tahoma; margin: 0; padding: 0; }
+#container{ width: 100%; margin: 0 auto;}
+#box{ width: 100%; margin:0  padding: 0; float: left;}
+i{ font-weight: normal; }
+
+header { width: 100%; background: #FFF; border: 1px solid #CCC; margin: 0; padding: 0; height: 100px;}
+header .logo{ background: url("../images/logo.png") no-repeat 20px center; width: 120px; height: 74px; padding: 10px; margin: 5px;}
+
+#search{ width: 100%; background: #FFF; border: 1px solid #CCC; margin:10px 0 0 0; padding:10px 0; display: flex; justify-content: center;}
+#search form{ width: 1024px; }
+#search form button[type="submit"]{ position: relative; top: 23px; }
+
+#search .search h3{ width: 100%; margin-bottom: 10px; letter-spacing: 5px; color:  #333; text-align: center;}
+
+#sidebar{ width: 14.5%; margin: 10px 0 00; padding:10px 0; background: #FFF; float: left; border: 1px solid #CCC;}
+#sidebar nav .menu{ width: 100%; margin: 0; padding: 0; float: left; text-transform: capitalize; }
+#sidebar nav .menu .titulo{ width: 100%; float: left; margin: 0; text-align: center; padding-bottom: 5px; border-bottom: 1px solid #ccc; font-size: 16px font-weight:bold; letter-spacing: 2px; }
+#sidebar nav .menu ul{ width: 100%; margin: 0; padding: 0; }
+#sidebar nav .menu ul li{ display: block; margin: 10px; list-style: 0;  float: left; width: 90%; }
+#sidebar nav .menu ul li a{ display: block; width: 99.9%; margin: 10px 0; padding: 5px 0 5px 5px; font: 14px Arial, sans-serif, helvetica, Tahoma; color: #888; text-decoration: none;  float: left; border-left: 5px solid #069; border-bottom: 1px solid #CCC;}
+#sidebar nav .menu ul li a:hover{ color: #006699; background: #D4D4D4; border-left: 5px solid #e0ab16; }
+
+#content{ width: 85%; min-height: 405px; background: #fff; padding: 10px; margin:10px 0 0 0; border: 1px solid #CCC; float: right; }
+#content .data h3, .relatorio h3{ width: 99.911111%; background: #D4D4D4; padding:10px 0; font-size: 18px; float: left; text-align: center; letter-spacing: 10px; text-transform: uppercase; margin-bottom: 20px; }
+#content .data .btn{ padding: 5px 20px; text-decoration: none; margin: 10px }
+#content .data .btn_inativo{ background: #b32922; font-size: 16px; padding: 2px 5px; margin: 10px; color: #FFF; text-decoration: none; float: left; text-align: center; }
+#content .data .btn_ativo{background: #2e995b; font-size: 16px; padding: 2px 20px; margin: 10px; color: #FFF; text-decoration: none; float: left; text-align: center; }
+#content .data .btn_view{ background: #069; font-size: 16px; padding: 2px 5px; margin: 10px; color: #FFF; text-decoration: none; float: left; text-align: center; }
+#content .data .btn_editar{ background: #333; font-size: 16px; padding: 2px 5px; margin: 10px; color: #FFF; text-decoration: none; float: left; text-align: center; }
+#content .data .btn_deletar{ background: #900; font-size: 16px; padding: 2px 5px; margin: 10px; color: #FFF; text-decoration: none; float: left; text-align: center; }
+#content .data  table{ width: 100%; margin-bottom: 10px; border-collapse: collapse; }
+
+#content .data  table thead tr{ font-size: 1em; text-align: center; height: 40px; line-height: 40px; background: #888; color: #FFF; }
+#content .data  table tbody tr{ text-align: center; height: 25px; line-height: 25px;}
+#content .data  table tbody td{ padding: 0 10px; text-transform: capitalize; text-align: justify; }
+#content .data  table tbody tr:nth-child(odd){background-color: #FFF: }
+#content .data  table tbody tr:nth-child(even){background-color: #faedd9;}
+#content .data  table tbody tr .btn-pendente{ border-color: #ffc107; color: #ffc107; font-weight: bold; }
+#content .data  table tbody tr .btn-aprovada{ border-color: #28a745; color: #28a745; }
+#content .data  table tbody tr .btn-cancelada{ border-color: #900; color: #900; padding: 5px 16px; font-weight: bold;  }
+#content .data  table tbody tr .btn-executando{ border-color: #069; color: #069; padding: 5px 10px; font-weight: bold; }
+#content .data  table tbody tr .btn-encerrada{ border-color: #000; color: #000; padding: 5px 16px; font-weight: bold; }
+#content .pagination {float: left; position: relative; left: 38%; top: 70%;}
+#content .pagination a { color: black; float: left; padding: 8px 16px; text-decoration: none;}
+#content .pagination .active a { background-color: #006699; color: white; border-color:#069;}
+#content .pagination a:hover:not(.active) {background-color: #000; border-color: #000; color: #fff;}
+
+#content .categorias{ width: 100%; margin: 0 auto; display: flex; justify-content: space-around; }
+#content .categorias .box_categoria{ text-align: center;  }
+#content .categorias .box_categoria .icon{ width: 100%; margin: 0; padding: 0; position: relative; top: 50%; padding: 50px; }
+#content .categorias .box_categoria .icon a{ text-decoration: none; color: #CCC; }
+#content .categorias .box_categoria .icon a:hover{ color: #333; }
+#content .categorias .box_categoria .icon .fa{ font-size: 80px; margin-bottom: 30px; }
+#content .data .titulo{ font-size: 14px; color: #900; background: #FFF; text-align: left; letter-spacing: normal; text-transform: capitalize; font-weight: normal; margin: 0; padding: 0; margin-bottom: 10px;}
+
+#content .form{ margin: 2% auto; display: flex; justify-content: center;}
+#content .error404{ width: 90%; margin: 5% auto; display: flex; justify-content: center; }
+#content .visualizar .modal-body input, .visualizar .modal-body textarea { border: none; margin-top: -10px;  }
+#content textarea.form-control {min-height: 150px; max-height: 150px; overflow:hidden; resize: none; height: auto; }
+
+#content .visualizar label{ font-weight: bold; }
+#content .visualizar .modal-content .modal-header .modal-title{ font-weight: bold; text-align: center; width: 100%; justify-content: center; align-items: center; line-height: 60px; text-transform: uppercase; letter-spacing: 10px; }
+#content .visualizar .modal-content .modal-header .logo{ width: 120px; height: 74px; padding: 0 10px; margin: 5px;}
+#content .visualizar .modal-content .modal-header{ display: flex; border-bottom: 1px solid #888; text-align: center;  }
+
+#content .visualizar .ass{ text-align: center; width: 100%; margin: 0; padding: 0; visibility: hidden;}
+#content .visualizar .ass .ass_resp{ width: 90%; margin:0 auto; padding:0;}
+#content .visualizar .ass .ass_resp .ass_chefe, .ass .ass_resp .ass_ger, .ass .ass_resp .ass_adm{ font-weight: bold; text-align: center; float: left; margin: 80px 10px; border-top: 1px solid #000; }
+#content .relatorio .btn-relatorio{ display: flex; justify-content: center; object-position: center;  }
+#content .modal-footer span, #content .relatorio .btn-relatorio span{ padding-right: 10px; font-weight: bold;}
+
+#content #relatorio tbody tr td{ padding: 0 10px; text-transform: capitalize; text-align: justify; }
+
+
+footer{ width:100%; margin: 0; padding: 0;}
+footer .copy{ width: 100%; background: #FFF; border: 1px solid #CCC; float: left; padding: 10px 0; margin: 10px 0; text-align: center; } 
+
+/*MESSAGES*/
+.alert{ width: 100%; display: block; font-size: 14px; text-align: center; padding: 10px 0; font-weight: bold; }
+.alert .fa{ text-align: left; padding: 0 0 0 10px; float: left; position: relative; left: 0; top: 5px; }
+
+/*medias queres*/
+/* Telefones em paisagem e abaixo */
+@media (max-width: 480px) { 
+     /* estilos aqui */
+ }
+
+/* Telefones em paisagem a tablet em retrato */
+@media (max-width: 767px) {
+     /* estilos aqui */
+}
+
+/* Tablet em retrato a paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+     /* estilos aqui */
+}
+
+/* Desktop grande */
+@media (min-width: 1200px) {
+    /* estilos aqui */
+}
+
+/*CSS para impressão*/
+@media print {
+	#content .visualizar .modal @page {
+		margin: 0.5cm;
+		size: 'A4'
+	}
+
+	#content .relatorio @page{
+		margin: 0.5cm;
+		size: landscape;
+	}
+
+	header, #search, #sidebar, #content, footer, #content .visualizar .close, .dataTables_length, .dataTables_filter, .dataTables_info, .dataTables_paginate, .paging_simple_numbers, .btn{ visibility: hidden; }
+
+	#content .visualizar .modal{ visibility: visible; }
+	#content .visualizar .ass{visibility: visible;}
+	#content .visualizar .modal .modal-content{ width:1024px; float: none !important; margin-left: -260px; border:1px solid #000; color: #000; }
+	#content .visualizar .modal .modal-content .modal-header{  border-bottom:1px solid #000;  }
+	#content .visualizar .modal .modal-content .modal-footer{visibility: hidden;}
+	#content .relatorio{ visibility: visible; position: absolute; top: 0; left: 0; font-size: 10px;}
+	#content .relatorio h3{ border-bottom: 1px solid #000; }
+}
